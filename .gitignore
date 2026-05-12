@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Feature specs stay local — do not commit these folders
+/feature-specs_copied/
