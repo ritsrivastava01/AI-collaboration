@@ -30,8 +30,9 @@ export function ProjectSidebar({ isOpen, onClose }: ProjectSidebarProps) {
     <aside
       className={cn(
         'fixed top-14 left-0 z-40 flex h-[calc(100dvh-3.5rem)] w-full max-w-sm flex-col border-r border-surface-border bg-surface/95 backdrop-blur-xl transition-transform duration-200 ease-out',
-        isOpen ? 'translate-x-0' : '-translate-x-full'
+        isOpen ? 'translate-x-0 visible' : '-translate-x-full invisible pointer-events-none'
       )}
+      inert={!isOpen ? '' : undefined}
       aria-hidden={!isOpen}>
       <div className='flex items-center justify-between border-b border-surface-border px-5 py-4'>
         <div>
