@@ -41,5 +41,4 @@ yarn-error.log*
 next-env.d.ts
 
 # Feature specs stay local — do not commit these folders
-/feature-specs/
-Context/feature-specs/
+/feature-specs_copied/
